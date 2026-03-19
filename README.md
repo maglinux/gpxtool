@@ -58,16 +58,16 @@ gpx-tool extract \
 gpx-tool shift-start \
   --input route.gpx \
   --output shifted.gpx \
-  --anchor-lat 52.5200 \
-  --anchor-lon 13.4050 \
+  --anchor-lat 48.661944 \
+  --anchor-lon 9.003889 \
   --tolerance 15
 
 # 3) Move loop anchor for closed loops
 gpx-tool move-loop-anchor \
   --input loop.gpx \
   --output loop-shifted.gpx \
-  --anchor-lat 52.5200 \
-  --anchor-lon 13.4050 \
+  --anchor-lat 48.661944 \
+  --anchor-lon 9.003889 \
   --tolerance 15
 ```
 
@@ -118,8 +118,8 @@ gpx-tool extract \
   --input route.gpx \
   --output segment.gpx \
   --by-location \
-  --start-location 52.5172,13.3929 \
-  --end-location 52.5159,13.3777
+  --start-location 48.661944,9.003889 \
+  --end-location 48.661944,9.003889
 ```
 
 ### Shift route start
@@ -128,8 +128,8 @@ gpx-tool extract \
 gpx-tool shift-start \
   --input route.gpx \
   --output shifted.gpx \
-  --anchor-lat 52.5200 \
-  --anchor-lon 13.4050 \
+  --anchor-lat 48.661944 \
+  --anchor-lon 9.003889 \
   --loop-threshold 5 \
   --tolerance 15
 ```
@@ -140,8 +140,8 @@ gpx-tool shift-start \
 gpx-tool move-loop-anchor \
   --input loop.gpx \
   --output loop-shifted.gpx \
-  --anchor-lat 52.5200 \
-  --anchor-lon 13.4050 \
+  --anchor-lat 48.661944 \
+  --anchor-lon 9.003889 \
   --loop-threshold 5 \
   --tolerance 15
 ```
