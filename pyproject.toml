@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpx-tool"
+version = "0.1.0"
+description = "CLI tool to extract and rotate GPX tracks without rerouting"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "gpxpy>=1.6.2",
+]
+
+[project.scripts]
+gpx-tool = "gpx_tool.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
